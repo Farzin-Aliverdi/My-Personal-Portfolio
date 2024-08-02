@@ -14,6 +14,7 @@ function AudioSketch({ audioFile }) {
       console.log('Sound loaded successfully');
       setSong(sound);
       const amplitude = new p5.Amplitude();
+      p5.Amplitude();
       amplitude.setInput(sound);
       setAnalyzer(amplitude);
       song.play();
